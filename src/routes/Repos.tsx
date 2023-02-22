@@ -1,8 +1,9 @@
 import { RepositoryProp } from "../types/repo";
-
 import Repo from "../components/Repo/Repo";
+
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
+
 import styles from "./Repos.module.css";
 import Loader from "../components/Loader/Loader";
 
@@ -20,25 +21,27 @@ const Repos = () => {
 
       setLoading(false);
 
-      let sortRepos = data.sort(
+      let filterRepo = data.filter((repo: RepositoryProp) => repo.language);
+      filterRepo = filterRepo.sort(
         (a: RepositoryProp, b: RepositoryProp) =>
           b.stargazers_count - a.stargazers_count
       );
-      sortRepos = sortRepos.slice(0, 5);
-      setRepos(sortRepos);
+
+      filterRepo = filterRepo.slice(0, 5);
+      setRepos(filterRepo);
     };
     if (username) {
       loadRepositories(username);
     }
   }, []);
 
-  // AGREGAR EL LOADER
   if (!repos && loading) return <Loader />;
 
   return (
     <div className={styles.repos}>
       <h2>Explore user repositories:</h2>
       <h2>{username}</h2>
+
       {repos && repos.length === 0 && <p>No repositories found</p>}
       {repos && repos.length > 0 && (
         <div className={styles.respos_box}>

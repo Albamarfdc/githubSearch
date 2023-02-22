@@ -7,6 +7,7 @@
   border-radius: 1rem;
   gap: 1rem;
   background-color: #0d1117;
+  box-shadow: #238636 0px 0px 10px 0px;
 }
 
 .user img {
@@ -23,7 +24,6 @@
 }
 
 .location svg {
-  fill: #238636;
   font-size: 1.5rem;
 }
 
@@ -48,7 +48,7 @@
 }
 
 .status .number {
-    color: #238636;
+
   padding: 0.2rem 0.5rem;
   border-radius: 4px;
 }

@@ -1,46 +1,31 @@
 .repo {
-  background-color: #0d1117;
-  padding: 2rem;
-  border-radius: 10px;
-  border: 2px solid #ffffff;
+  font-style: italic;
   display: flex;
-  flex-direction: column;
-  align-items: start;
-  gap: 1rem;
-  flex: 1 0 50%;
-  margin-bottom: 1rem;
-  margin-left: 4rem;
-}
-
-.status {
-  display: flex;
-  gap: 1rem;
-}
-
-.status div {
-  display: flex;
-  align-items: center;
   justify-content: center;
-  gap: 0.4rem;
-  border-radius: 3px;
-  border: 1px solid #ffffff;
-  padding-right: 0.4rem;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: #0d1117;
+  margin: auto 0;
+  padding: 2rem;
+  border-radius: 1rem;
+  margin-bottom: 1.5rem;
+  box-shadow: #238636 0px 0px 10px 0px;
 }
 
-.status svg {
-  background-color: #238636;
-  padding: 0.2rem 0.4rem;
-  border-radius: 3px;
-  font-size: 2rem;
+.git svg {
+  fill: #000000;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+.git svg :hover {
+  fill: #238636;
 }
 
 .repo_btn {
   display: flex;
   align-items: center;
   padding: 0.5rem 1rem;
-  color: #4545467c;
+  color: #fafffa3f;
   border-radius: 5px;
   gap: 0.5rem;
 }
-
-/* COlocar una caja al lado de la otra con flex*/

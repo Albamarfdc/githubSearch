@@ -18,12 +18,14 @@ const Home = () => {
     const res = await fetch(`https://api.github.com/users/${username}`);
     const data = await res.json();
 
+    setLoading(false);
+
     if (res.status === 404) {
       setError(true);
       return;
     }
-
     setError(false);
+
     const { avatar_url, login, location, followers, following } = data;
 
     const userData: UserProps = {

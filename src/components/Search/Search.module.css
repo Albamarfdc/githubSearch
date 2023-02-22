@@ -8,6 +8,7 @@
   align-items: center;
   gap: 1rem;
   margin-bottom: 1.5rem;
+  box-shadow: #238636 0px 0px 10px 0px;
 }
 .search p {
   color: #8b949e;
@@ -32,6 +33,5 @@
   background-color: #238636;
   cursor: pointer;
 }
-
 
 /* #238636 */

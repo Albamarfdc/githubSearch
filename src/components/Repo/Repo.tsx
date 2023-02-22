@@ -1,7 +1,7 @@
 import { RepositoryProp } from "../../types/repo";
 import { AiOutlineStar, AiOutlineFork } from "react-icons/ai";
 import { BsCodeSlash } from "react-icons/bs";
-import { RiGitRepositoryLine } from "react-icons/ri";
+import { FiGithub } from "react-icons/fi";
 import styles from "./Repo.module.css";
 
 const Repo = ({
@@ -14,22 +14,16 @@ const Repo = ({
   return (
     <div className={styles.repo}>
       <h3>{name}</h3>
-      <p>
+      <div className={styles.repo_btn}>
         <BsCodeSlash /> {language}
-      </p>
-      <div className={styles.status}>
-        <div>
-          <AiOutlineStar />
-          <span>{stargazers_count}</span>
-        </div>
-        <div>
-          <AiOutlineFork /> <span>{forks_count}</span>
-        </div>
+        <a href={html_url} target="_blank">
+          {" "}
+          <div className={styles.git}>
+            {" "}
+            <FiGithub />
+          </div>
+        </a>
       </div>
-      <a href={html_url} target="_blank" className={styles.repo_btn}>
-        <span>See Code</span>
-        <RiGitRepositoryLine />
-      </a>
     </div>
   );
 };

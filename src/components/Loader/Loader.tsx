@@ -1,10 +1,11 @@
 import styles from "./Loader.module.css";
+import { BiLoaderAlt } from "react-icons/bi";
 
 const Loader = () => {
   return (
-    <div>
-      <span className={styles.loader}></span>
-    </div>
+    <>
+      <BiLoaderAlt className={styles.loader} />
+    </>
   );
 };
 
