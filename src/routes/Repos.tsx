@@ -1,10 +1,10 @@
 import { RepositoryProp } from "../types/repo";
 
-import Repo from "../components/Repo";
+import Repo from "../components/Repo/Repo";
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import styles from "./Repos.module.css";
-import Loader from "../components/Loader";
+import Loader from "../components/Loader/Loader";
 
 const Repos = () => {
   const { username } = useParams();
@@ -17,7 +17,7 @@ const Repos = () => {
       const res = await fetch(`https://api.github.com/users/${username}/repos`);
 
       const data = await res.json();
-   
+
       setLoading(false);
 
       let sortRepos = data.sort(
@@ -37,7 +37,8 @@ const Repos = () => {
 
   return (
     <div className={styles.repos}>
-      <h2>Explore user repositories:{username}</h2>
+      <h2>Explore user repositories:</h2>
+      <h2>{username}</h2>
       {repos && repos.length === 0 && <p>No repositories found</p>}
       {repos && repos.length > 0 && (
         <div className={styles.respos_box}>

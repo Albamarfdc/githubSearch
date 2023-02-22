@@ -1,4 +1,4 @@
-import { RepositoryProp } from "../types/repo";
+import { RepositoryProp } from "../../types/repo";
 import { AiOutlineStar, AiOutlineFork } from "react-icons/ai";
 import { BsCodeSlash } from "react-icons/bs";
 import { RiGitRepositoryLine } from "react-icons/ri";
@@ -17,7 +17,7 @@ const Repo = ({
       <p>
         <BsCodeSlash /> {language}
       </p>
-      <div className={styles.stats}>
+      <div className={styles.status}>
         <div>
           <AiOutlineStar />
           <span>{stargazers_count}</span>

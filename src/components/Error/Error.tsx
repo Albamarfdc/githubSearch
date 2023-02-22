@@ -1,6 +1,6 @@
 // importar imagen de la carpeta public
-import error from "../../src/assets/img/404.jpg"
-import styles from "./Error.module.css";
+import error from "../../assets/img/404.jpg"
+import styles from "./Error.module.css"
 
 
 const Error = () => {
