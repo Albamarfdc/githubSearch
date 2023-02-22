@@ -1,10 +1,19 @@
 .app {
-    max-width: 500px;
-    margin: 0 auto;
+  max-width: 500px;
+  margin: 0 auto;
 }
 
-.app h1{
-    text-align: center;
-    margin-bottom: 1rem;
-
+.app h1 {
+  text-align: center;
+  margin-bottom: 1rem;
 }
+
+.app_img {
+  margin: 0 auto;
+  display: block;
+  max-width: 20%;
+  margin-bottom: 1rem;
+  height: auto;
+}
+
+/* alinear imagen  */

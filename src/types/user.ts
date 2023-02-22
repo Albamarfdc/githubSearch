@@ -4,5 +4,5 @@ export type UserProps={
     location:string;
     followers:number;
     following:number;
-    public_repos:number;
+
 }

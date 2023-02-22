@@ -17,7 +17,6 @@ const Search = ({ loadUser }: SearchProps) => {
 
   return (
     <div className={styles.search}>
-      <h2>Finder the User</h2>
       <p>Discover your best repositories</p>
       <div className={styles.search_box}>
         <input

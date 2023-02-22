@@ -1,0 +1,67 @@
+.user {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  border-radius: 1rem;
+  gap: 1rem;
+  background-color: #0d1117;
+}
+
+.user img {
+  width: 200px;
+  height: 200px;
+  border: 4px solid #238636;
+  border-radius: 50%;
+}
+
+.location {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.location svg {
+  fill: #238636;
+  font-size: 1.5rem;
+}
+
+.location span {
+  color: #8b949e;
+  font-weight: bold;
+}
+
+.status {
+  display: flex;
+}
+
+.status div {
+  display: flex;
+  flex-direction: column;
+  padding: 0 1rem;
+  gap: 0.5rem;
+}
+
+.status div:first-child {
+  border-right: 2px solid #238636;
+}
+
+.status .number {
+    color: #238636; ;
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+}
+
+.user a {
+  color: #8b949e;
+  padding: 1rem;
+  border-radius: 5px;
+  opacity: 0.8;
+  transition: 0.4s;
+}
+
+.user a:hover {
+  opacity: 1;
+  color: #238636;
+}

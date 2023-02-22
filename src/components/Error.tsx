@@ -1,5 +1,5 @@
 // importar imagen de la carpeta public
-import error from "../../public/404.jpg"
+import error from "../../src/assets/img/404.jpg"
 import styles from "./Error.module.css";
 
 
